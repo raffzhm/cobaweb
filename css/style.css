@@ -26,3 +26,23 @@
     min-height: calc(100vh - 6.5rem - 40px);
   }
 }
+
+/* Gaya untuk menu saat layar berukuran kecil */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Sembunyikan menu saat awalnya */
+    position: absolute;
+    right: 0;
+    top: 3.25rem; /* Sesuaikan tinggi navbar */
+    background-color: #fff; /* Warna latar belakang */
+    min-width: 100%; /* Lebar menu */
+  }
+
+  .navbar-burger {
+    display: block; /* Tampilkan tombol hamburger menu */
+  }
+
+  .navbar.is-active .navbar-menu {
+    display: block; /* Tampilkan menu saat tombol hamburger diklik */
+  }
+}
