@@ -1,42 +1,28 @@
-.has-same-height .card {
-    height: 320px;
-    overflow: hidden;
+.social-media {
+  margin-top: 30px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: calc(3.25rem + 20px);
   }
-  
-  .card-content h3 {
-    text-align: center;
+
+  .navbar {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
-  
-  .table-profile td,
-  th {
-    border: none !important;
+
+  .hero.is-fullheight {
+    min-height: calc(100vh - 6.5rem - 40px);
   }
-  
-  .table-profile td:first-of-type {
-    font-weight: bold;
-  }
-  
-  .skills-content .media {
-    margin: 0 !important;
-    padding: 4px !important;
-    border: 0 !important;
-  }
-  
-  .skills-content .progress {
-    height: 4px !important;
-  }
-  
-  .custom-tags {
-    text-align: center !important;
-    display: block;
-  }
-  
-  .portfolio-container .card {
-    margin-bottom: 2em;
-  }
-  
-  .section-heading {
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 6em;
-  }
+}
